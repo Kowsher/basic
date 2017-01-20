@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int convert(string n, int base_of_n){
+
+    char aux[n.size()], *end;
+    strcpy(aux,n.c_str());
+
+    int dec =strtol(aux,&end,base_of_n);
+    return dec;
+
+}
+int main()
+{
+    int b;
+    string n;
+    cout<<"Enter the number and base to convert in decimal"<<endl;
+    cin>>n>>b;
+    cout<<convert(n,b)<<endl;
+
+
+
+
+    return 0;
+}
