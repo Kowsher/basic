@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t_cas;
+    cin>>t_cas;
+    for(int i=0; i<=t_cas; i++)///t_cas++
+    {
+        cout<<endl;
+        string s;
+        while(getline(cin,s))
+        {
+            if(s.empty())break;
+            cout<<s<<endl;
+        }
+    }
+}
